@@ -60,7 +60,7 @@ export const Mind = () => {
             key={index}
             src={`https://swiigyclone-4.onrender.com/images/${item.image}`}
             alt={`item-${index}`}
-            className="w-[140px] h-[155px] object-cover rounded"
+             className="w-[140px] md:h-[155px] h-[142px] object-cover rounded"
           />
         ))}
       </div>
