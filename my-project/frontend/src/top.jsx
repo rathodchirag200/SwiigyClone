@@ -8,7 +8,7 @@ export const Top = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/images");
+      const res = await fetch("https://swiigyclone-4.onrender.com/api/images");
       const jsonData = await res.json();
       setResdata(jsonData);
     } catch (error) {
@@ -63,7 +63,7 @@ export const Top = () => {
             {/* Image */}
             <div className="relative w-full h-[140px] overflow-hidden rounded-t">
               <img
-                src={`http://localhost:3000/images/${item.image}`}
+                src={`https://swiigyclone-4.onrender.com/images/${item.image}`}
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
               />

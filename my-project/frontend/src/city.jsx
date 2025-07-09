@@ -6,7 +6,7 @@ export const Citydata = () => {
 
   const fetchdata = async () => {
     try {
-      const response = await fetch("http://localhost:3000/city");
+      const response = await fetch("https://swiigyclone-4.onrender.com/city");
       const data = await response.json();
       setCity(data.cities);
     } catch (error) {

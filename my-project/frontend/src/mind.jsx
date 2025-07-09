@@ -7,7 +7,7 @@ export const Mind = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("http://localhost:3000/images");
+      const res = await fetch("https://swiigyclone-4.onrender.com/images");
       const jsonData = await res.json();
       setData(jsonData);
     } catch (error) {
@@ -58,7 +58,7 @@ export const Mind = () => {
         {data.map((item, index) => (
           <img
             key={index}
-            src={`http://localhost:3000/images/${item.image}`}
+            src={`https://swiigyclone-4.onrender.com/images/${item.image}`}
             alt={`item-${index}`}
             className="w-[140px] h-[155px] object-cover rounded"
           />
